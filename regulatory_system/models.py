@@ -95,6 +95,7 @@ class Customer(models.Model):
         ordering = ('id',)
         verbose_name = verbose_name_plural = "客户信息"
 
+
 class CustomerLatest(models.Model):
     id = models.AutoField(primary_key=True)
     license_id = models.CharField(max_length=12, blank=True, default="", verbose_name="许可证号")
